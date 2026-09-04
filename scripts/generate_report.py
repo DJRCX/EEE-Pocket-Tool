@@ -29,7 +29,7 @@ def figure(filename: str, caption: str) -> str:
     src = (ROOT / "report" / "screenshots" / filename).resolve().as_uri()
     return f"""
 <figure>
-  <img src=\"{src}\" alt=\"{html.escape(caption)}\">
+  <img src="{src}" alt="{html.escape(caption)}">
   <figcaption>{html.escape(caption)}</figcaption>
 </figure>
 """
@@ -40,32 +40,32 @@ def main() -> None:
     code = html.escape(CODE)
 
     doc = f"""<!DOCTYPE html>
-<html lang=\"en\">
+<html lang="en">
 <head>
-<meta charset=\"utf-8\">
+<meta charset="utf-8">
 <title>EEE Pocket Tool – Final Project Report</title>
 <style>
 @font-face {{
-  font-family: \"Times New Roman\";
-  src: url(\"{Path(FONT).resolve().as_uri()}\") format(\"truetype\");
+  font-family: "Times New Roman";
+  src: url("{Path(FONT).resolve().as_uri()}") format("truetype");
   font-weight: 400;
   font-style: normal;
 }}
 @font-face {{
-  font-family: \"Times New Roman\";
-  src: url(\"{Path(FONT_B).resolve().as_uri()}\") format(\"truetype\");
+  font-family: "Times New Roman";
+  src: url("{Path(FONT_B).resolve().as_uri()}") format("truetype");
   font-weight: 700;
   font-style: normal;
 }}
 @font-face {{
-  font-family: \"Times New Roman\";
-  src: url(\"{Path(FONT_I).resolve().as_uri()}\") format(\"truetype\");
+  font-family: "Times New Roman";
+  src: url("{Path(FONT_I).resolve().as_uri()}") format("truetype");
   font-weight: 400;
   font-style: italic;
 }}
 @font-face {{
-  font-family: \"Courier New\";
-  src: url(\"{Path(MONO).resolve().as_uri()}\") format(\"truetype\");
+  font-family: "Courier New";
+  src: url("{Path(MONO).resolve().as_uri()}") format("truetype");
   font-weight: 400;
   font-style: normal;
 }}
@@ -74,7 +74,7 @@ def main() -> None:
   margin: 25mm 25mm 25mm 25mm;
 }}
 html, body {{
-  font-family: \"Times New Roman\", Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 12pt;
   line-height: 1.5;
   color: #111;
@@ -104,7 +104,7 @@ p {{ margin: 0.55em 0; }}
 ul, ol {{ margin: 0.4em 0 0.4em 1.4em; }}
 li {{ margin: 0.2em 0; }}
 code, pre {{
-  font-family: \"Courier New\", Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   font-size: 8.5pt;
   text-align: left;
 }}
@@ -147,17 +147,17 @@ figcaption {{
 </head>
 <body>
 
-<div class=\"cover\">
+<div class="cover">
   <p><strong>BRAC University</strong></p>
   <p>Department of Electrical and Electronic Engineering</p>
   <p>CSE162 / EEE103IL / ECE103IL: Computer Programming Laboratory</p>
   <p><strong>Final Project Report</strong></p>
   <h1>EEE Pocket Tool – A Multi-Functional Circuit Assistant in C</h1>
-  <table class=\"meta\">
-    <tr><td>Submitted by (group)</td><td><span class=\"fill\">&nbsp;</span></td></tr>
-    <tr><td>Student names and IDs</td><td><span class=\"fill\">&nbsp;</span></td></tr>
-    <tr><td></td><td><span class=\"fill\">&nbsp;</span></td></tr>
-    <tr><td>Section / Faculty</td><td><span class=\"fill\">&nbsp;</span></td></tr>
+  <table class="meta">
+    <tr><td>Submitted by (group)</td><td><span class="fill">&nbsp;</span></td></tr>
+    <tr><td>Student names and IDs</td><td><span class="fill">&nbsp;</span></td></tr>
+    <tr><td></td><td><span class="fill">&nbsp;</span></td></tr>
+    <tr><td>Section / Faculty</td><td><span class="fill">&nbsp;</span></td></tr>
     <tr><td>Date</td><td>4 September 2026</td></tr>
   </table>
 </div>
@@ -179,21 +179,21 @@ figcaption {{
 <h2>3. Theory and Equations</h2>
 <h3>3.1 Series circuit</h3>
 <p>Resistors in series share the same current. The equivalent resistance is the arithmetic sum of the individual values. Ohm’s law then gives the loop current, and each voltage drop follows from that current:</p>
-<p class=\"eq\">R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + · · · + R<sub>n</sub></p>
-<p class=\"eq\">I = V<sub>s</sub> / R<sub>eq</sub></p>
-<p class=\"eq\">V<sub>i</sub> = I · R<sub>i</sub></p>
+<p class="eq">R<sub>eq</sub> = R<sub>1</sub> + R<sub>2</sub> + · · · + R<sub>n</sub></p>
+<p class="eq">I = V<sub>s</sub> / R<sub>eq</sub></p>
+<p class="eq">V<sub>i</sub> = I · R<sub>i</sub></p>
 <p>Kirchhoff’s voltage law requires that the sum of the resistor drops equal the source voltage. The program prints this sum as a check.</p>
 
 <h3>3.2 Parallel circuit</h3>
 <p>Resistors in parallel share the same voltage. The reciprocal of the equivalent resistance is the sum of the reciprocals. Total current is V<sub>s</sub> / R<sub>eq</sub>, and each branch current is V<sub>s</sub> / R<sub>i</sub>:</p>
-<p class=\"eq\">1 / R<sub>eq</sub> = Σ (1 / R<sub>i</sub>)</p>
-<p class=\"eq\">I = V<sub>s</sub> / R<sub>eq</sub></p>
-<p class=\"eq\">I<sub>i</sub> = V<sub>s</sub> / R<sub>i</sub></p>
+<p class="eq">1 / R<sub>eq</sub> = Σ (1 / R<sub>i</sub>)</p>
+<p class="eq">I = V<sub>s</sub> / R<sub>eq</sub></p>
+<p class="eq">I<sub>i</sub> = V<sub>s</sub> / R<sub>i</sub></p>
 <p>Kirchhoff’s current law requires that the branch currents add up to the total current. That sum is also printed as a check.</p>
 
 <h3>3.3 Four-band resistor color code</h3>
 <p>The first two bands are significant digits. The third band is a multiplier. With Black at index 0, Brown at 1, and so on through White at 9, the resistance is</p>
-<p class=\"eq\">R = (d<sub>1</sub> × 10 + d<sub>2</sub>) × 10<sup>d<sub>3</sub></sup></p>
+<p class="eq">R = (d<sub>1</sub> × 10 + d<sub>2</sub>) × 10<sup>d<sub>3</sub></sup></p>
 <p>Gold and silver are not digits. They are special multipliers of 0.1 and 0.01 respectively, so they are handled with a separate comparison rather than as array indices. The laboratory example is brown–black–orange: (1 × 10 + 0) × 1000 = 10 000 Ohm.</p>
 
 <h3>3.4 Equivalent resistance</h3>
@@ -201,9 +201,9 @@ figcaption {{
 
 <h3>3.5 Voltage divider</h3>
 <p>For the unloaded divider of R<sub>1</sub> (from Vin to the output node) and R<sub>2</sub> (from the output node to ground),</p>
-<p class=\"eq\">V<sub>out</sub> = V<sub>in</sub> · R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub>)</p>
+<p class="eq">V<sub>out</sub> = V<sub>in</sub> · R<sub>2</sub> / (R<sub>1</sub> + R<sub>2</sub>)</p>
 <p>Solving for R<sub>2</sub> when R<sub>1</sub>, V<sub>in</sub> and a desired V<sub>out</sub> are known gives</p>
-<p class=\"eq\">R<sub>2</sub> = R<sub>1</sub> · V<sub>out</sub> / (V<sub>in</sub> − V<sub>out</sub>)</p>
+<p class="eq">R<sub>2</sub> = R<sub>1</sub> · V<sub>out</sub> / (V<sub>in</sub> − V<sub>out</sub>)</p>
 <p>A passive divider cannot produce V<sub>out</sub> ≥ V<sub>in</sub>. The program rejects that case instead of dividing by zero or reporting a negative resistor.</p>
 
 <h2>4. Implementation</h2>
@@ -221,7 +221,7 @@ figcaption {{
 
 <h2>5. Full Source Code</h2>
 <p>The complete program is listed below. Comments describe the reasoning behind each tool rather than restating the obvious syntax of C.</p>
-<pre class=\"source\">{code}</pre>
+<pre class="source">{code}</pre>
 
 <h2>6. Sample Outputs</h2>
 <p>Each of the five required tools was executed at least once. The figures below are console transcripts of those runs. Typed inputs are shown on the same line as the prompt, as they appear in an interactive session.</p>
@@ -237,19 +237,19 @@ figcaption {{
 
 <h2>9. How to Compile and Run</h2>
 <p>On a system with gcc installed:</p>
-<pre class=\"source\">make
+<pre class="source">make
 ./eee_pocket_tool</pre>
 <p>The optional target <code>make test</code> replays the sample cases used in Section 6 and checks the printed results.</p>
 
-<p style=\"margin-top:2em; text-align:center;\"><em>End of report</em></p>
+<p style="margin-top:2em; text-align:center;"><em>End of report</em></p>
 
 </body>
 </html>
 """
     OUT_HTML.parent.mkdir(parents=True, exist_ok=True)
-    OUT_HTML.write_text(doc, encoding=\"utf-8\")
-    print(f\"wrote {OUT_HTML}\")
+    OUT_HTML.write_text(doc, encoding="utf-8")
+    print(f"wrote {OUT_HTML}")
 
 
-if __name__ == \"__main__\":
+if __name__ == "__main__":
     main()
