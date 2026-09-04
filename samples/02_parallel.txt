@@ -1,0 +1,32 @@
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 2
+
+--- Parallel Circuit Solver ---
+One voltage source and n resistors in parallel.
+
+Source voltage Vs (V): 12
+Number of resistors n: 2
+Enter each resistor value:
+  R1 (Ohm): 6
+  R2 (Ohm): 3
+
+---------- Results ----------
+Equivalent resistance Req : 2 Ohm
+Total current I           : 6 A
+
+Current through each branch (Ii = Vs / Ri):
+  I1   (R1  = 6 Ohm     ) : 2 A
+  I2   (R2  = 3 Ohm     ) : 4 A
+
+KCL check: sum of branch currents = 6 A  (matches I)
+-----------------------------

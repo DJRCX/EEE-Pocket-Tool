@@ -1,0 +1,26 @@
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 4
+
+--- Equivalent Resistance Calculator ---
+Type 's' for series or 'p' for parallel.
+
+Connection type (s/p): p
+Number of resistors n: 2
+Enter each resistor value:
+  R1 (Ohm): 10
+  R2 (Ohm): 10
+
+---------- Results ----------
+Configuration : parallel
+Req           : 5 Ohm
+-----------------------------

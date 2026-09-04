@@ -1,0 +1,229 @@
+Welcome to EEE Pocket Tool.
+All resistances are in Ohm, voltages in volts, currents in amperes.
+
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Series Circuit Solver ---
+One voltage source and n resistors in series.
+
+Source voltage Vs (V): Number of resistors n: Enter each resistor value:
+  R1 (Ohm):   R2 (Ohm): 
+---------- Results ----------
+Equivalent resistance Req : 6 Ohm
+Series current I          : 2 A
+
+Voltage drop across each resistor (Vi = I * Ri):
+  V1   (R1  = 2 Ohm     ) : 4 V
+  V2   (R2  = 4 Ohm     ) : 8 V
+
+KVL check: sum of voltage drops = 12 V  (matches Vs)
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Parallel Circuit Solver ---
+One voltage source and n resistors in parallel.
+
+Source voltage Vs (V): Number of resistors n: Enter each resistor value:
+  R1 (Ohm):   R2 (Ohm): 
+---------- Results ----------
+Equivalent resistance Req : 2 Ohm
+Total current I           : 6 A
+
+Current through each branch (Ii = Vs / Ri):
+  I1   (R1  = 6 Ohm     ) : 2 A
+  I2   (R2  = 3 Ohm     ) : 4 A
+
+KCL check: sum of branch currents = 6 A  (matches I)
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Resistor Value Determiner ---
+4-band color code using the first three bands
+(digit, digit, multiplier). Tolerance is not required.
+
+  Digit colors : black brown red orange yellow green blue violet gray white
+  Multipliers  : the same colors (x10^digit), plus gold (x0.1) and silver (x0.01)
+
+Band 1 color (first digit): Band 2 color (second digit): Band 3 color (multiplier):   
+---------- Results ----------
+Color code : brown - black - orange
+Calculation: (1 x 10 + 0) x 1000 = 10000 Ohm
+Resistance : 10 kOhm
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Equivalent Resistance Calculator ---
+Type 's' for series or 'p' for parallel.
+
+Connection type (s/p): Number of resistors n: Enter each resistor value:
+  R1 (Ohm):   R2 (Ohm):   R3 (Ohm): 
+---------- Results ----------
+Configuration : series
+Req           : 60 Ohm
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Equivalent Resistance Calculator ---
+Type 's' for series or 'p' for parallel.
+
+Connection type (s/p): Number of resistors n: Enter each resistor value:
+  R1 (Ohm):   R2 (Ohm): 
+---------- Results ----------
+Configuration : parallel
+Req           : 5 Ohm
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Voltage Divider Calculator ---
+  1. Output Voltage Determiner
+  2. Resistance Calculator for Desired Output
+  0. Back to main menu
+Enter your choice: 
+-- Output Voltage Determiner --
+Vout = Vin * R2 / (R1 + R2)
+
+Input voltage Vin (V): R1 (Ohm): R2 (Ohm): 
+---------- Results ----------
+Vout : 8 V
+Ratio R2/(R1+R2) = 0.6667
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Voltage Divider Calculator ---
+  1. Output Voltage Determiner
+  2. Resistance Calculator for Desired Output
+  0. Back to main menu
+Enter your choice: 
+-- Resistance Calculator for Desired Output --
+Given Vin and R1, find R2 so that Vout = Vin * R2 / (R1 + R2).
+Rearranged: R2 = R1 * Vout / (Vin - Vout)
+
+Input voltage Vin (V): R1 (Ohm): Desired Vout (V): 
+---------- Results ----------
+R2   : 2 kOhm
+Check: Vin * R2 / (R1 + R2) = 8 V
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+--- Resistor Value Determiner ---
+4-band color code using the first three bands
+(digit, digit, multiplier). Tolerance is not required.
+
+  Digit colors : black brown red orange yellow green blue violet gray white
+  Multipliers  : the same colors (x10^digit), plus gold (x0.1) and silver (x0.01)
+
+Band 1 color (first digit): Band 2 color (second digit): Band 3 color (multiplier):   
+---------- Results ----------
+Color code : red - red - gold
+Calculation: (2 x 10 + 2) x 0.1 = 2.2 Ohm
+Resistance : 2.2 Ohm
+-----------------------------
+
+Press Enter to return to the menu...
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 
+Thank you for using EEE Pocket Tool. Goodbye.

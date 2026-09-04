@@ -1,0 +1,35 @@
+Welcome to EEE Pocket Tool.
+All resistances are in Ohm, voltages in volts, currents in amperes.
+
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 1
+
+--- Series Circuit Solver ---
+One voltage source and n resistors in series.
+
+Source voltage Vs (V): 12
+Number of resistors n: 2
+Enter each resistor value:
+  R1 (Ohm): 2
+  R2 (Ohm): 4
+
+---------- Results ----------
+Equivalent resistance Req : 6 Ohm
+Series current I          : 2 A
+
+Voltage drop across each resistor (Vi = I * Ri):
+  V1   (R1  = 2 Ohm     ) : 4 V
+  V2   (R2  = 4 Ohm     ) : 8 V
+
+KVL check: sum of voltage drops = 12 V  (matches Vs)
+-----------------------------

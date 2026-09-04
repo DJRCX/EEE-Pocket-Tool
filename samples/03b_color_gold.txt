@@ -1,0 +1,29 @@
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 3
+
+--- Resistor Value Determiner ---
+4-band color code using the first three bands
+(digit, digit, multiplier). Tolerance is not required.
+
+  Digit colors : black brown red orange yellow green blue violet gray white
+  Multipliers  : the same colors (x10^digit), plus gold (x0.1) and silver (x0.01)
+
+Band 1 color (first digit): red
+Band 2 color (second digit): red
+Band 3 color (multiplier):   gold
+
+---------- Results ----------
+Color code : red - red - gold
+Calculation: (2 x 10 + 2) x 0.1 = 2.2 Ohm
+Resistance : 2.2 Ohm
+-----------------------------

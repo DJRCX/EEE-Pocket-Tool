@@ -1,0 +1,31 @@
+========================================
+          EEE Pocket Tool
+  Multi-Functional Circuit Assistant
+========================================
+  1. Series Circuit Solver
+  2. Parallel Circuit Solver
+  3. Resistor Value Determiner
+  4. Equivalent Resistance Calculator
+  5. Voltage Divider Calculator
+  0. Exit
+----------------------------------------
+Enter your choice: 5
+
+--- Voltage Divider Calculator ---
+  1. Output Voltage Determiner
+  2. Resistance Calculator for Desired Output
+  0. Back to main menu
+Enter your choice: 2
+
+-- Resistance Calculator for Desired Output --
+Given Vin and R1, find R2 so that Vout = Vin * R2 / (R1 + R2).
+Rearranged: R2 = R1 * Vout / (Vin - Vout)
+
+Input voltage Vin (V): 12
+R1 (Ohm): 1000
+Desired Vout (V): 8
+
+---------- Results ----------
+R2   : 2 kOhm
+Check: Vin * R2 / (R1 + R2) = 8 V
+-----------------------------
